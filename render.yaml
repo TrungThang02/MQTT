@@ -1,5 +1,5 @@
-type: web
-name: default
-buildCommand: npm install
-startCommand: npm start
-env: node
+- type: web
+  name: default
+  buildCommand: npm install
+  startCommand: npm start
+  env: node

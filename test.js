@@ -1,6 +1,5 @@
 const mqtt = require('mqtt');
 
-// Thay đổi địa chỉ và cổng để phản ánh địa chỉ và cổng của MQTT server đã triển khai
 const brokerUrl = 'mqtt://mqtt-ttt.onrender.com';
 
 const client = mqtt.connect(brokerUrl);
