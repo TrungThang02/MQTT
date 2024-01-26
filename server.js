@@ -1,6 +1,9 @@
+require('dotenv').config();
+
 const aedes = require('aedes')();
 const server = require('net').createServer(aedes.handle);
-const port = 1883;
+
+const port = process.env.PORT || 1883;
 
 server.listen(port, function () {
   console.log('MQTT server is running on port', port);
